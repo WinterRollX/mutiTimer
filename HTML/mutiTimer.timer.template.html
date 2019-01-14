@@ -1,0 +1,32 @@
+<div class="timer-container">
+	<h3>{{title}}</h3>
+	
+	<hr>
+	<span class="timer-clock-display"></span>
+	<input type="number" step = 1 class="timer-hour-input timer-input" ng-model = "hour" ng-change = "checkData()">
+	<span>hours</span>
+	<input type="number" step = 1 class="timer-minute-input  timer-input" ng-model = "minute" ng-change = "checkData()">
+	<span>minutes</span>	
+	<input type="number" step = 1 class="timer-second-input  timer-input" ng-model = "second" ng-change = "checkData()">
+	<span>seconds</span>
+
+	<div class="timer-display-box">
+		<div class="timer-display-inner-box">
+			<span class="timer-display-text">{{timeDisplay}}</span>
+		</div>
+	</div>
+	<div class="timer-flex-container">
+	<button class="timer-control-buttons" ng-click = "onClickStart()" >{{startButtonCaption}}</button>
+	<button class="timer-control-buttons" ng-click = "resetTimer()" >{{resetButtonCaption}}</button>
+	<button class = "timer-control-buttons timer-delete-button" ng-click = "onClickDelete()">Delete Timer</button>
+
+	</div>
+
+	<audio id = "timer-alert-audio" loop = 'loop'>
+		<source src="Audio/alert.mp3" type="audio/mpeg">
+	</audio>
+
+</div>
+
+
+

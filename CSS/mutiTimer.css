@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+	font-family: Arial;
+}
+body {
+	position: relative;
+}
+.title {
+	text-align: center;
+}
+.main-controls-container {
+	display: flex;
+	width: 60%;
+	min-height: 50px;
+	margin-left:auto;
+	margin-right: auto;
+	margin-bottom: 10px; 
+	padding: 5px;
+	border: solid 1px #8c8c8c;
+	box-shadow: 0px 0px 3px 1px #8c8c8c;
+	justify-content:center;
+}
+.main-controls-container input {
+	display: block;
+	margin: 5px;
+	
+}
+.timer-name-text-input {
+	box-shadow: 1px 1px 0px 0px #8c8c8c;
+	width: 55%;
+}
+.timer-add-button {
+	box-shadow: 2px 2px 0px 0px #8c8c8c;
+	border-radius: 5px;
+	width: 25%;
+}
+.timer-add-button:hover {
+	background-color: #e6e6e6;
+}
+.flex-container {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.timer-list-container {
+	width: 500px;
+	margin: 10px;
+}
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Muti Timer @winterroll</title>
+	<link rel="stylesheet" type="text/css" href="CSS/mutiTimer.css">
+	<link rel="stylesheet" type="text/css" href="CSS/timer.css">	
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.5/angular.min.js"></script>
+</head>
+<body ng-app = 'mutiTimer' ng-controller = "mainController">
+	<h1 class="title">Muti Timer</h1>
+	<div class="main-controls-container">
+		<input class="timer-name-text-input" type="text" ng-model = "tempTimerName">
+		<input class="timer-add-button" type="button" value="Add timer" ng-click = "onAddTimer();">
+	</div>
+	<div class="flex-container">
+	<div class = "timer-list-container" ng-repeat = "timer in timerList" >
+		 <timer class="timer-directive" title = 'timer.timerName' timer-i-d = "$index" delete-timer = "deleteTimer(timerID)">
+		 </timer>
+
+	</div>
+	</div>
+	<!-- <h2>Here is the footer.</h2> -->
+
+	<script src = "JavaScript/mutiTimer.app.js"></script>
+	<script src = "JavaScript/mutiTimer.mainController.js"></script>
+	<script src = "JavaScript/mutiTimer.timer.directive.controller.js"></script>
+	<script src = "JavaScript/mutiTimer.timer.directive.js"></script>
+
+
+</body>
+</html>

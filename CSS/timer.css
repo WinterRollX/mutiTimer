@@ -1,0 +1,87 @@
+/*All css item here must start with prefix timer*/
+.timer-container {
+	padding: 15px;
+	border-radius: 15px;
+	border:solid 1px black;
+	box-shadow: 3px 3px 3px 1px black;
+}
+.timer-container h3 {
+	background-color: rgba(230,230,230,0.4);
+	text-shadow: 0px 0px 1px black;
+	font-size: 1.4em;
+	text-align: center;
+}
+.timer-container hr {
+	background-color: rgba(230,230,230,0.5);
+}
+.timer-display-box {
+	position: relative;
+}
+.timer-display-text {
+	border-radius: 15px;
+	width: 90%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	display: block;
+	text-shadow: 0px 0px 4px #8c8c8c;
+	font-size: 4.0em;
+}
+.timer-control-buttons {
+	border-radius: 5px;
+	height: 30px;
+	width: 20%;
+	box-shadow: 2px 2px 0px 0px #8c8c8c;
+	text-shadow: 0px 0px 1px black;
+	transition: background-color 1s;
+}
+.timer-control-buttons:hover {
+	background-color:  rgba(51,255,51,0.6);
+	transition: background-color 1s;
+}
+
+.timer-alert-pic {
+	display: block;
+	max-width: 300px;
+	max-height: 100px;
+	height: auto;
+}
+.timer-input{
+	border-radius: 5px;
+	padding: 2px;
+	width: 50px;
+}
+.timer-hour-input {
+	width: 60px;
+}
+.timer-delete-button {
+	margin-left: 38%;
+}
+
+.timer-delete-button:hover {
+	background-color:  #ff471a;
+}
+
+.timer-in-alert {
+	animation-name: myAnimation;
+	animation-iteration-count: infinite;
+	animation-duration: 0.75s;
+	box-shadow: 0px 0px 5px 5px #ff3300;
+}
+
+@keyframes myAnimation {
+	0% {
+		background-color: white;
+		box-shadow: 0px 0px 0px 0px white;
+	}
+	50% {
+		background-color: red;
+		box-shadow: 0px 0px 5px 5px #ff3300;
+	}
+	100% {
+		background-color: white;
+		box-shadow: 0px 0px 0px 0px white;
+	}
+}
